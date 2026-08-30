@@ -81,26 +81,8 @@
                 <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt="Photography"></picture></div>
             </div>
 
-            <!-- MESSAGE BAR -->
-            <div class="message-bar">
-                <div class="message-reflection" aria-hidden="true">
-                    <div id="messageReflectionTrack" class="message-reflection-track">
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile2.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk2.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile3.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk3.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile4.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk4.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile5.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk5.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile6.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk6.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile7.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk7.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile8.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk8.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile9.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk9.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile10.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk10.jpg" alt=""></picture>
-                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt=""></picture>
-                    </div>
-                </div>
-
-                <!-- DOTS -->
-                <div class="dots">
+            <!-- SLIDER DOTS -->
+            <div class="dots">
                     <div class="dot active" onclick="goToSlide(0)"></div>
                     <div class="dot" onclick="goToSlide(1)"></div>
                     <div class="dot" onclick="goToSlide(2)"></div>
@@ -111,18 +93,32 @@
                     <div class="dot" onclick="goToSlide(7)"></div>
                     <div class="dot" onclick="goToSlide(8)"></div>
                     <div class="dot" onclick="goToSlide(9)"></div>
-                </div>
-
-                <span class="message-text">What's on your mind?</span>
-
-                <a href="https://wa.me/7908441469?text=Hi%20Prantik,%20send%20your%20package%20details."
-                    class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Message us</span>
-                </a>
             </div>
         </section>
     </div>
+
+    <section class="hero-actions" aria-label="Quick actions">
+        <div class="hero-action-card hero-action-card--plan">
+            <div class="hero-action-copy">
+                <h2>Let’s plan your event.</h2>
+                <p>Share us your requirements for your special day, we’ll discuss to fulfill your dream.</p>
+            </div>
+            <a href="https://wa.me/7908441469?text=Hi%20Prantik,%20I%20would%20like%20to%20plan%20an%20event."
+                class="hero-action-btn hero-action-btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Message us
+            </a>
+        </div>
+
+        <div class="hero-action-card hero-action-card--gallery">
+            <div class="hero-action-copy">
+                <h2>View your photos <span>online.</span></h2>
+                <p>If you are a client of Prantik Photography, you can see your event photos here anytime.</p>
+            </div>
+            <a href="https://studio-omega-bay-55.vercel.app/login.html"
+                class="hero-action-btn hero-action-btn--gallery" target="_blank"
+                rel="noopener noreferrer">Open gallery</a>
+        </div>
+    </section>
 
 
     <!-- =========================
@@ -662,7 +658,6 @@
 
         const slides = document.getElementById("slides");
         const dots = document.querySelectorAll(".dot");
-        const messageReflectionTrack = document.getElementById("messageReflectionTrack");
 
         function showSlide(index, animate = true) {
             currentSlide = index;
@@ -674,9 +669,6 @@
             }
 
             slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-            messageReflectionTrack.style.transition = slides.style.transition;
-            messageReflectionTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-
             const activeDotIndex = Math.abs(currentSlide % totalRealSlides);
             dots.forEach((dot, i) => {
                 dot.classList.toggle("active", i === activeDotIndex);
