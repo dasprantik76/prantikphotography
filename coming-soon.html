@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1f3a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="The Prantik Photography client gallery is coming soon.">
+    <title>Client Gallery Coming Soon | Prantik Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0b1f3a;
+            --blue: #12315b;
+            --rose: #e11d48;
+            --white: #fff;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body { min-height: 100%; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            min-height: 100svh;
+            display: grid;
+            place-items: center;
+            overflow-x: hidden;
+            color: var(--white);
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                linear-gradient(135deg, rgba(5, 15, 31, .92), rgba(18, 49, 91, .78)),
+                url("https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg") center / cover no-repeat fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background: radial-gradient(circle at 50% 40%, rgba(255,255,255,.1), transparent 42%);
+        }
+
+        .page {
+            position: relative;
+            width: min(920px, calc(100% - 32px));
+            padding: 42px 24px;
+            text-align: center;
+        }
+
+        .logo {
+            width: min(210px, 55vw);
+            height: auto;
+            margin-bottom: clamp(52px, 10vh, 92px);
+            filter: drop-shadow(0 4px 16px rgba(0,0,0,.25));
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 22px;
+            color: rgba(255,255,255,.78);
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before, .eyebrow::after {
+            content: "";
+            width: 30px;
+            height: 1px;
+            background: var(--rose);
+        }
+
+        h1 {
+            margin: 0;
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: clamp(3.3rem, 10vw, 7rem);
+            font-weight: 600;
+            line-height: .88;
+            letter-spacing: -.035em;
+            text-shadow: 0 5px 30px rgba(0,0,0,.25);
+        }
+
+        h1 em { color: #ff5378; font-weight: 500; }
+
+        .message {
+            max-width: 560px;
+            margin: 28px auto 34px;
+            color: rgba(255,255,255,.78);
+            font-size: clamp(.95rem, 2.5vw, 1.08rem);
+            line-height: 1.75;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 48px;
+            padding: 0 24px;
+            border: 1px solid rgba(255,255,255,.34);
+            border-radius: 999px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: .9rem;
+            font-weight: 600;
+            transition: background .25s ease, border-color .25s ease, transform .25s ease;
+        }
+
+        .back-link:hover, .back-link:focus-visible {
+            background: rgba(255,255,255,.12);
+            border-color: rgba(255,255,255,.7);
+            transform: translateY(-2px);
+        }
+
+        .back-link:focus-visible { outline: 3px solid rgba(255,83,120,.45); outline-offset: 4px; }
+
+        .arrow { font-size: 1.15rem; transition: transform .25s ease; }
+        .back-link:hover .arrow { transform: translateX(-3px); }
+
+        @media (max-width: 600px) {
+            body {
+                background-image:
+                    linear-gradient(135deg, rgba(5, 15, 31, .92), rgba(18, 49, 91, .78)),
+                    url("https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg");
+            }
+            .page { padding-block: 28px; }
+            .logo { margin-bottom: 58px; }
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .page { animation: arrive .8s cubic-bezier(.22, 1, .36, 1) both; }
+            @keyframes arrive { from { opacity: 0; transform: translateY(18px); } }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <a href="index.html" aria-label="Return to Prantik Photography home">
+            <img class="logo" src="https://ik.imagekit.io/2u47biiyv/ppimages/logo.png" alt="Prantik Photography">
+        </a>
+        <p class="eyebrow">Client gallery</p>
+        <h1>Coming <em>soon.</em></h1>
+        <p class="message">We’re preparing a beautiful new space for you to view and relive your special moments. Please check back soon.</p>
+        <a class="back-link" href="index.html"><span class="arrow" aria-hidden="true">←</span> Back to home</a>
+    </main>
+</body>
+
+</html>
