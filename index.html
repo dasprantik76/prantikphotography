@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Chrome, Firefox OS and Opera Theme Color -->
+    <meta name="theme-color" content="#12315b">
+
+    <!-- Safari / iOS Status Bar Theme Color -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script>
+        // Always begin a refreshed homepage from its top position.
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        window.addEventListener('pageshow', () => window.scrollTo(0, 0));
+    </script>
+
+    <title>Prantik Photography</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for WhatsApp Icon, Quote Icon & Socials -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- SF Pro Display & Text Web Fonts (For non-Apple devices) -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display">
+
+    <!-- Google Font: Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP BAR (FIXED ON SCROLL)
+    ========================= -->
+
+    <header class="top-bar">
+        <div class="top-bar-content">
+            <a href="index.html">
+                <img src="https://ik.imagekit.io/2u47biiyv/ppimages/logo.png" alt="Prantik Photography" class="top-logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="videos.html" class="nav-item">Videos</a>
+                <a href="albums.html" class="nav-item">Albums</a>
+                <a href="packages.html" class="nav-item">Packages</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION WITH BLURRED BAR
+    ========================= -->
+
+    <div class="hero-container">
+        <section class="hero">
+            <div class="slides" id="slides">
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile2.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk2.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile3.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk3.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile4.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk4.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile5.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk5.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile6.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk6.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile7.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk7.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile8.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk8.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile9.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk9.jpg" alt="Photography"></picture></div>
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile10.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk10.jpg" alt="Photography"></picture></div>
+                <!-- Duplicate of first image for seamless loop -->
+                <div class="slide"><picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt="Photography"></picture></div>
+            </div>
+
+            <!-- MESSAGE BAR -->
+            <div class="message-bar">
+                <div class="message-reflection" aria-hidden="true">
+                    <div id="messageReflectionTrack" class="message-reflection-track">
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile2.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk2.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile3.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk3.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile4.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk4.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile5.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk5.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile6.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk6.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile7.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk7.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile8.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk8.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile9.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk9.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile10.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk10.jpg" alt=""></picture>
+                        <picture><source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile1.jpg"><img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-desk1.jpg" alt=""></picture>
+                    </div>
+                </div>
+
+                <!-- DOTS -->
+                <div class="dots">
+                    <div class="dot active" onclick="goToSlide(0)"></div>
+                    <div class="dot" onclick="goToSlide(1)"></div>
+                    <div class="dot" onclick="goToSlide(2)"></div>
+                    <div class="dot" onclick="goToSlide(3)"></div>
+                    <div class="dot" onclick="goToSlide(4)"></div>
+                    <div class="dot" onclick="goToSlide(5)"></div>
+                    <div class="dot" onclick="goToSlide(6)"></div>
+                    <div class="dot" onclick="goToSlide(7)"></div>
+                    <div class="dot" onclick="goToSlide(8)"></div>
+                    <div class="dot" onclick="goToSlide(9)"></div>
+                </div>
+
+                <span class="message-text">What's on your mind?</span>
+
+                <a href="https://wa.me/7908441469?text=Hi%20Prantik,%20send%20your%20package%20details."
+                    class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Message us</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- =========================
+         FOUNDER PROFILE SECTION
+    ========================= -->
+
+    <section class="profile-section">
+        <div class="profile-card">
+            <img src="https://ik.imagekit.io/2u47biiyv/ppimages/bangla-text.png" alt="আপনার গল্প আমাদের ফ্রেম" class="profile-bangla-text">
+
+            <p class="profile-quote">
+                Whether it’s a wedding, a family celebration, a portrait, or a moment found somewhere along the way, I’m
+                always looking for the story behind the frame.
+            </p>
+
+            <div class="image-wrapper">
+                <img src="https://ik.imagekit.io/2u47biiyv/ppimages/prantik.png" alt="Prantik Das">
+            </div>
+
+            <h2 class="profile-name">Prantik Das</h2>
+            <p class="profile-title">Founder, Prantik Photography</p>
+
+            <a href="#about" class="learn-more-btn">Know more</a>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         FEATURED WORKS SECTION
+    ========================= -->
+
+    <section class="featured-section">
+        <div class="featured-header">
+            <h2 class="featured-title">Featured works<span>.</span></h2>
+            <p class="featured-subtitle">A curated collection of moments, stories, and emotions captured through my lens.</p>
+        </div>
+
+        <div class="grid-wrapper">
+            <div class="featured-grid">
+                
+                <!-- COLUMN 1 -->
+                <div class="grid-column">
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work1.jpg" alt="Couple Portrait">
+                    </div>
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work4.jpg" alt="Outdoor Landscape Portrait">
+                    </div>
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work8.jpg" alt="Outdoor Landscape Portrait">
+                    </div>
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="grid-column">
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work2.jpg" alt="Bride Portrait">
+                    </div>
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work5.jpg" alt="Bengali Wedding Couple">
+                    </div>
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work7.jpg" alt="Wedding Moments">
+                    </div>
+                </div>
+
+                <!-- COLUMN 3 (DESKTOP ONLY) -->
+                <div class="grid-column desktop-only-col">
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work3.jpg" alt="Haldi Ceremony">
+                    </div>
+                    <div class="work-item">
+                        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/work6.jpg" alt="Reception Couple">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Full-Width Independent Edge-to-Edge Black Gradient Shadow -->
+        <div class="grid-gradient-overlay"></div>
+
+        <!-- Floating "See More" Button Overlay -->
+        <div class="see-more-container">
+            <a href="gallery.html" class="see-more-btn">See More</a>
+        </div>
+    </section>
+    <!-- =========================
+         COUNTER STATS SECTION
+    ========================= -->
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-users stat-icon" aria-hidden="true"></i>
+                <p class="stat-value stat-value--full"><span class="counter" data-target="10">0</span>+ Team<br>members</p>
+            </div>
+
+            <div class="stat-card">
+                <img src="wedding-rings.svg" alt="" class="stat-icon stat-rings-icon">
+                <p class="stat-value stat-value--full"><span class="counter" data-target="100">0</span>+ Projects<br>experienced</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-briefcase stat-icon" aria-hidden="true"></i>
+                <p class="stat-value stat-value--full"><span class="counter" data-target="5">0</span>+ Years<br>in the business</p>
+            </div>
+
+            <div class="stat-card">
+                <img src="india.svg" alt="" class="stat-icon stat-map-icon">
+                <p class="stat-value stat-value--full">PAN-India<br>service</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         DIGITAL INVITATION VIDEO SECTION
+    ========================= -->
+
+    <section class="invitation-section">
+        <!-- Decorative Banana Leaf Image -->
+        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/leaf-bg.png" alt="Decorative Leaf" class="invitation-leaf-bg">
+
+        <div class="invitation-container">
+            <div class="invitation-grid">
+                <!-- Left Text Content & Action Buttons -->
+                <div class="invitation-text-content">
+                    <h2 class="invitation-title">Digital<br>Invitation Video<span>.</span></h2>
+                    <p class="invitation-price">Starts at ₹499 only</p>
+
+                    <div class="invitation-buttons">
+                        <a href="#invitations" class="invitation-btn-filled">See more</a>
+                        <a href="https://wa.me/7908441469" class="invitation-btn-outline" target="_blank"
+                            rel="noopener noreferrer">Order now</a>
+                    </div>
+                </div>
+
+                <!-- Additional Video Player Card (Desktop Only) -->
+                <div class="invitation-video-wrapper invitation-video-wrapper--secondary" onclick="toggleInvitationVideo(this)">
+                    <img src="https://ik.imagekit.io/2u47biiyv/ppimages/invitation-thumb.png" alt="Digital Invitation Sample" class="invitation-thumbnail">
+                    <video class="invitation-video" src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/wedding-invitation1.mp4" controls preload="metadata"></video>
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <!-- Right Video Player Card (Flush Right) -->
+                <div class="invitation-video-wrapper" id="invitationVideoCard" onclick="toggleInvitationVideo(this)">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/invitation-thumb.jpg">
+                        <img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/invitation-thumb2.jpg" alt="Digital Invitation Sample" class="invitation-thumbnail"
+                            id="invitationThumb">
+                    </picture>
+                    <video class="invitation-video" id="invitationVideo" controls preload="metadata">
+                        <source media="(max-width: 767px)" src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/wedding-invitation1.mp4" type="video/mp4">
+                        <source src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/birthday-invitation1.mp4" type="video/mp4">
+                    </video>
+                    <div class="play-button-overlay" id="invitationPlayBtn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Alpona Design Border -->
+        <div class="invitation-alpona-bottom"></div>
+    </section>
+
+
+    <!-- =========================
+         ALBUMS SECTION
+    ========================= -->
+
+    <section class="albums-section" id="albums">
+        <div class="albums-header">
+            <h2 class="albums-title">Albums<span>.</span></h2>
+            <p class="albums-subtitle">where <span>memories</span> shine.</p>
+
+            <a href="albums.html" class="albums-order-btn">Explore</a>
+        </div>
+
+        <!-- Infinite Scrolling Carousel -->
+        <div class="albums-carousel-container">
+            <div class="albums-carousel-track">
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album1.jpg" alt="Album 1"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album2.jpg" alt="Album 2"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album3.jpg" alt="Album 3"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album4.jpg" alt="Album 4"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album5.jpg" alt="Album 5"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album6.jpg" alt="Album 6"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album7.jpg" alt="Album 7"></div>
+
+                <!-- DUPLICATE SET OF 7 PHOTOS -->
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album1.jpg" alt="Album 1"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album2.jpg" alt="Album 2"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album3.jpg" alt="Album 3"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album4.jpg" alt="Album 4"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album5.jpg" alt="Album 5"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album6.jpg" alt="Album 6"></div>
+                <div class="album-card"><img src="https://ik.imagekit.io/2u47biiyv/ppimages/album7.jpg" alt="Album 7"></div>
+            </div>
+        </div>
+
+        <!-- Checkmark Features List -->
+        <div class="albums-features">
+            <div class="feature-item">
+                <i class="far fa-check-circle"></i>
+                <span>Handcrafted Premium Albums</span>
+            </div>
+            <div class="feature-item">
+                <i class="far fa-check-circle"></i>
+                <span>Personalized Album Designs</span>
+            </div>
+            <div class="feature-item">
+                <i class="far fa-check-circle"></i>
+                <span>High-Quality Printing</span>
+            </div>
+            <div class="feature-item">
+                <i class="far fa-check-circle"></i>
+                <span>Simply Affordable Pricing</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         PHOTO FRAMES SECTION
+    ========================= -->
+
+    <section class="photo-frames-section">
+        <div class="photo-frames-content">
+            <h2 class="frames-title">Photo Frames<span>.</span></h2>
+            <p class="frames-subtitle">Your <span>story</span> deserves to be framed.</p>
+
+            <a href="https://wa.me/7908441469" class="frames-order-btn" target="_blank" rel="noopener noreferrer">Order
+                now</a>
+        </div>
+
+        <div class="framed-photo-container" id="framePhotoMockup" role="button" tabindex="0" aria-label="Show next framed photo">
+            <div class="frame-photo-stage">
+                <img id="framePhotoImage" src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile10.jpg" alt="Framed wedding photograph">
+            </div>
+            <p class="frame-photo-hint"><span class="frame-photo-hint-desktop">Click to change photo.</span><span class="frame-photo-hint-mobile">Tap to change photo.</span></p>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CAMERA HAND BANNER SECTION
+    ========================= -->
+
+    <section class="camera-hand-section">
+        <div class="camera-hand-content">
+            <h2 class="camera-hand-title"><span class="camera-title-line">Make your <span>wedding</span></span><br><span class="camera-title-line">impossible to forget<span class="camera-title-period">.</span></span></h2>
+            <p class="camera-hand-price">Package starts from ₹15,000</p>
+            <a href="packages.html" class="camera-hand-cta">See packages</a>
+            <p id="cameraHandOffer" class="camera-hand-offer">August offer is live now. Upto 45% discount.</p>
+        </div>
+        <div class="camera-section-wedding-photo" role="button" tabindex="0" aria-label="Tap to zoom wedding photo">
+            <span class="camera-photo-guides" aria-hidden="true"></span>
+            <div class="camera-section-wedding-photo-inner">
+                <img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/camera-sec-photo.jpg" alt="Wedding couple">
+            </div>
+        </div>
+        <div class="camera-hand-img-wrapper">
+            <picture>
+                <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/camera-hand-mobile.jpg?v=2">
+                <img src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/camera-hand.jpg" alt="Photographer holding a camera">
+            </picture>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         WEDDING FILM VIDEO BANNER SECTION
+    ========================= -->
+
+    <section class="wedding-film-section" id="wedding-film">
+        <video class="wedding-film-bg-video" autoplay muted loop playsinline poster="https://ik.imagekit.io/2u47biiyv/ppimages/wedding-film-poster.jpg">
+            <source src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/film-home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="wedding-film-overlay">
+            <p class="wedding-film-subtitle">Wedding Film by</p>
+            <h2 class="wedding-film-title">Prantik Photography</h2>
+
+            <div class="wedding-film-buttons">
+                <a href="videos.html" class="youtube-watch-btn wedding-film-see-more">See more</a>
+                <a href="https://youtube.com/@prantikphotography" class="youtube-watch-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <span>Watch on</span>
+                    <img src="https://ik.imagekit.io/2u47biiyv/ppimages/youtube-logo.png" alt="YouTube Logo" class="yt-logo-img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         SERVICES SECTION
+    ========================= -->
+
+    <section class="services-section" aria-labelledby="services-title">
+        <img class="services-mandala services-mandala--top" src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/mandala-white.png" alt="" aria-hidden="true">
+        <img class="services-mandala services-mandala--bottom" src="https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/mandala-white.png" alt="" aria-hidden="true">
+
+        <div class="services-content">
+            <h2 class="services-title" id="services-title">Our services<span>.</span></h2>
+            <p class="services-subtitle">Photography <span>•</span> Cinematography <span>•</span> Drone</p>
+
+            <div class="services-grid">
+                <div class="service-pill">Wedding</div>
+                <div class="service-pill">Prewedding</div>
+                <div class="service-pill">Engagement</div>
+                <div class="service-pill">Anniversary</div>
+                <div class="service-pill">Rice Ceremony</div>
+                <div class="service-pill">Birthday</div>
+                <div class="service-pill service-pill--last">Corporate</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CONNECT WITH US (INSTAGRAM) SECTION
+    ========================= -->
+
+    <section class="instagram-section">
+        <h2 class="instagram-title">Connect with us<span>.</span></h2>
+        <p class="instagram-subtitle">Follow the journey behind the lens & get our latest updates on Instagram.</p>
+
+        <div class="phone-mockup-outer">
+            <div class="phone-button phone-button-mute"></div>
+            <div class="phone-button phone-button-vol-up"></div>
+            <div class="phone-button phone-button-vol-down"></div>
+            <div class="phone-button phone-button-power"></div>
+
+            <div class="phone-mockup-wrapper">
+
+                <!-- Status Bar & Dynamic Island -->
+                <div class="phone-status-bar">
+                    <span class="phone-time" id="phoneTime">9:41</span>
+                    <div class="phone-status-icons">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                </div>
+                <div class="phone-dynamic-island"></div>
+
+                <!-- INSTAGRAM PROFILE HEADER & FOLLOW BUTTON -->
+                <div class="instagram-profile-header">
+                    <div class="profile-info-row">
+                        <div class="profile-avatar-ring">
+                            <img src="https://ik.imagekit.io/2u47biiyv/ppimages/prantik.png" alt="Prantik Das Profile" class="profile-avatar">
+                        </div>
+                        <div class="profile-text-details">
+                            <h4 class="profile-username">
+                                Prantik Das
+                                <svg class="insta-verified-badge" viewBox="0 0 48 48" width="15" height="15">
+                                    <polygon fill="#42a5f5"
+                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884" />
+
+                                    <polygon fill="#fff"
+                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926" />
+                                </svg>
+
+                            </h4>
+                            <p class="profile-handle">@prantik.photography</p>
+                        </div>
+                    </div>
+
+                    <!-- CLICKABLE FOLLOW BUTTON -->
+                    <a href="https://www.instagram.com/prantik.photography/" target="_blank" rel="noopener noreferrer"
+                        class="insta-follow-btn">
+                        Follow
+                    </a>
+                </div>
+
+                <!-- INSTAGRAM TAB BAR (GRID / REELS ICONS) -->
+                <div class="instagram-tab-bar">
+                    <div class="tab-item active">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <div class="tab-item">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                </div>
+
+                <!-- WRAPPER CONTAINER FOR POSITIONING -->
+                <div class="instagram-grid-wrapper">
+                    <iframe src="https://snapwidget.com/embed/1128776" class="snapwidget-widget"
+                        allowtransparency="true" frameborder="0" scrolling="no"
+                        style="border:none; overflow:hidden; width:315px; height:315px"
+                        title="Posts from Instagram"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CONTACT US SECTION
+    ========================= -->
+
+    <section class="contact-section">
+        <h2 class="contact-title">Contact us<span>.</span></h2>
+
+        <div class="contact-info-list">
+            <div class="contact-item">
+                <div class="contact-icon-circle">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+                <a href="tel:+917908441469" class="contact-text">+91 - 7908441469</a>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon-circle">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <a href="mailto:prantikphotography@gmail.com" class="contact-text">prantikphotography@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon-circle">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+                <span class="contact-text">Kolkata, INDIA</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         FOOTER SECTION
+    ========================= -->
+
+    <aside class="whatsapp-chat" aria-label="WhatsApp chat">
+        <div class="whatsapp-chat-panel" id="whatsappChatPanel" aria-hidden="true">
+            <div class="whatsapp-chat-header">
+                <div class="whatsapp-chat-avatar-wrap">
+                    <img src="https://ik.imagekit.io/2u47biiyv/ppimages/prantik.png" alt="Prantik Das" class="whatsapp-chat-avatar">
+                    <span class="whatsapp-online-dot" aria-hidden="true"></span>
+                </div>
+                <div class="whatsapp-chat-person">
+                    <strong>Prantik Das</strong>
+                    <span>Online</span>
+                </div>
+                <button class="whatsapp-chat-close" type="button" aria-label="Close WhatsApp chat">
+                    <i class="fas fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="whatsapp-chat-body">
+                <div class="whatsapp-typing-bubble" aria-label="Prantik is typing">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="whatsapp-chat-message" hidden>
+                    <strong>Prantik Das</strong>
+                    <p>Hello there! 👋<br>How can I help?</p>
+                    <span class="whatsapp-chat-time">
+                        <span id="whatsappGreetingTime"></span>
+                        <svg class="whatsapp-delivery-ticks" viewBox="0 0 21 14" role="img" aria-label="Delivered">
+                            <path d="M1.5 7.4 5.1 11 12.6 2.7"></path>
+                            <path d="M7.7 8.7 10.1 11 19.2 1.6"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <form class="whatsapp-chat-form" id="whatsappChatForm">
+                <label class="visually-hidden" for="whatsappChatInput">Type a WhatsApp message</label>
+                <input id="whatsappChatInput" type="text" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" aria-label="Send message on WhatsApp">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+
+        <button class="whatsapp-chat-launcher" type="button" aria-label="Open WhatsApp chat" aria-expanded="false">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span class="whatsapp-chat-notification" aria-label="1 unread message">1</span>
+        </button>
+    </aside>
+
+    <footer class="site-footer">
+        <p class="footer-copyright">&copy; Prantik Photography. All rights reserved.</p>
+
+        <img src="https://ik.imagekit.io/2u47biiyv/ppimages/logo.png" alt="Prantik Photography" class="footer-logo">
+
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/prantik2022" class="social-icon facebook" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/prantik.photography" class="social-icon instagram" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/@prantikphotography" class="social-icon youtube" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <div class="pixelsetu-credit">
+            <span class="credit-text">Made by</span>
+            <a href="https://pixelsetu.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://ik.imagekit.io/2u47biiyv/ppimages/pixelsetu-logo.png" alt="PixelSetu Logo" class="credit-logo">
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+        /* TOP BAR SCROLL EFFECT */
+        const topBar = document.querySelector('.top-bar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                topBar.classList.add('scrolled');
+            } else {
+                topBar.classList.remove('scrolled');
+            }
+        });
+
+        /* HERO SLIDER SCRIPT */
+        let currentSlide = 0;
+        const totalRealSlides = 10;
+
+        const slides = document.getElementById("slides");
+        const dots = document.querySelectorAll(".dot");
+        const messageReflectionTrack = document.getElementById("messageReflectionTrack");
+
+        function showSlide(index, animate = true) {
+            currentSlide = index;
+
+            if (animate) {
+                slides.style.transition = "transform 0.8s ease-in-out";
+            } else {
+                slides.style.transition = "none";
+            }
+
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+            messageReflectionTrack.style.transition = slides.style.transition;
+            messageReflectionTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            const activeDotIndex = Math.abs(currentSlide % totalRealSlides);
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === activeDotIndex);
+            });
+
+        }
+
+        function goToSlide(index) {
+            showSlide(index, true);
+        }
+
+        showSlide(0, false);
+
+        setInterval(() => {
+            currentSlide++;
+
+            if (currentSlide > totalRealSlides) {
+                currentSlide = 0;
+                showSlide(0, false);
+                slides.offsetHeight;
+                currentSlide = 1;
+            }
+
+            showSlide(currentSlide, true);
+        }, 4000);
+
+        slides.addEventListener("transitionend", () => {
+            if (currentSlide >= totalRealSlides) {
+                currentSlide = 0;
+                showSlide(0, false);
+            }
+        });
+
+        /* COUNT-UP ANIMATION SCRIPT */
+        function animateCounter(counter) {
+            const target = +counter.getAttribute('data-target');
+            const duration = 1800;
+            const startTime = performance.now();
+
+            function updateNumber(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const progress = Math.min(elapsedTime / duration, 1);
+                const easeOutProgress = 1 - Math.pow(1 - progress, 3);
+                const currentValue = Math.floor(easeOutProgress * target);
+                counter.textContent = currentValue;
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    counter.textContent = target;
+                }
+            }
+
+            requestAnimationFrame(updateNumber);
+        }
+
+        const statsSection = document.querySelector('.stats-section');
+        let hasAnimated = false;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+                    document.querySelectorAll('.counter').forEach(counter => {
+                        animateCounter(counter);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        document.querySelectorAll('.stat-card, .service-pill').forEach((card) => {
+            card.addEventListener('pointerdown', () => {
+                card.classList.remove('is-selecting');
+                void card.offsetWidth;
+                card.classList.add('is-selecting');
+                window.setTimeout(() => card.classList.remove('is-selecting'), 160);
+            });
+        });
+
+        /* ALBUMS CENTER-SNAP CAROUSEL */
+        const carouselContainer = document.querySelector('.albums-carousel-container');
+        const albumTrack = carouselContainer.querySelector('.albums-carousel-track');
+        const sourceAlbumCards = Array.from(albumTrack.querySelectorAll('.album-card')).slice(0, 7);
+        const uniqueAlbumCount = sourceAlbumCards.length;
+        // Keep a full set on either side of the active set. Mobile deliberately
+        // exposes neighbouring cards, so this buffer makes the silent reset
+        // visually identical across the entire viewport, not just at centre.
+        albumTrack.replaceChildren();
+        for (let setIndex = 0; setIndex < 3; setIndex += 1) {
+            sourceAlbumCards.forEach((card) => albumTrack.append(card.cloneNode(true)));
+        }
+
+        albumTrack.querySelectorAll('img').forEach((image) => {
+            image.decoding = 'async';
+        });
+
+        const albumCards = Array.from(albumTrack.querySelectorAll('.album-card'));
+        const albumLoopStartIndex = uniqueAlbumCount;
+        const albumLoopResetIndex = uniqueAlbumCount * 2;
+
+        let currentVerticalAlbumIndex = albumLoopStartIndex;
+        let currentHorizontalAlbumIndex = albumLoopStartIndex;
+        let currentAlbumCard = null;
+
+        function usesVerticalAlbumSlider() {
+            return window.innerWidth >= 768;
+        }
+
+        function showVerticalAlbumCard(index, animate = true) {
+            const card = albumCards[index];
+            if (!card) return;
+
+            if (currentAlbumCard !== card) {
+                currentAlbumCard?.classList.remove('is-current');
+                card.classList.add('is-current');
+                currentAlbumCard = card;
+            }
+            const targetTop = card.offsetTop - (carouselContainer.clientHeight / 2) + (card.offsetHeight / 2);
+            albumTrack.style.transition = animate ? 'transform 0.8s ease-in-out' : 'none';
+            albumTrack.style.transform = `translate3d(0, -${targetTop}px, 0)`;
+        }
+
+        function showHorizontalAlbumCard(index, animate = true) {
+            const card = albumCards[index];
+            if (!card) return;
+
+            if (currentAlbumCard !== card) {
+                currentAlbumCard?.classList.remove('is-current');
+                card.classList.add('is-current');
+                currentAlbumCard = card;
+            }
+            const targetLeft = card.offsetLeft - (carouselContainer.clientWidth / 2) + (card.offsetWidth / 2);
+            albumTrack.style.transition = animate ? 'transform 0.8s ease-in-out' : 'none';
+            albumTrack.style.transform = `translate3d(-${targetLeft}px, 0, 0)`;
+        }
+
+        window.addEventListener('load', () => {
+            if (usesVerticalAlbumSlider()) {
+                showVerticalAlbumCard(currentVerticalAlbumIndex, false);
+            } else {
+                showHorizontalAlbumCard(currentHorizontalAlbumIndex, false);
+            }
+        });
+
+        let albumViewportWidth = window.innerWidth;
+        let albumResizeFrame;
+        window.addEventListener('resize', () => {
+            // Mobile browsers resize the viewport height while their address
+            // bar opens/closes. Ignore those events so they do not cancel an
+            // active transform transition and create a visible jump.
+            if (window.innerWidth === albumViewportWidth) return;
+            albumViewportWidth = window.innerWidth;
+
+            window.cancelAnimationFrame(albumResizeFrame);
+            albumResizeFrame = window.requestAnimationFrame(() => {
+                if (usesVerticalAlbumSlider()) {
+                    showVerticalAlbumCard(currentVerticalAlbumIndex, false);
+                } else {
+                    showHorizontalAlbumCard(currentHorizontalAlbumIndex, false);
+                }
+            });
+        });
+
+        function resetAlbumLoop(vertical) {
+            // Move both the track and active-card styling in one non-animated
+            // frame. Otherwise the identical replacement card visibly scales
+            // up while the outgoing duplicate scales down.
+            albumTrack.classList.add('is-resetting');
+
+            if (vertical) {
+                currentVerticalAlbumIndex = albumLoopStartIndex;
+                showVerticalAlbumCard(currentVerticalAlbumIndex, false);
+            } else {
+                currentHorizontalAlbumIndex = albumLoopStartIndex;
+                showHorizontalAlbumCard(currentHorizontalAlbumIndex, false);
+            }
+
+            void albumTrack.offsetWidth;
+            albumTrack.classList.remove('is-resetting');
+        }
+
+        albumTrack.addEventListener('transitionend', (event) => {
+            // Ignore opacity/scale transitions emitted by individual cards.
+            if (event.target !== albumTrack || event.propertyName !== 'transform') return;
+
+            if (usesVerticalAlbumSlider() && currentVerticalAlbumIndex === albumLoopResetIndex) {
+                resetAlbumLoop(true);
+            } else if (!usesVerticalAlbumSlider() && currentHorizontalAlbumIndex === albumLoopResetIndex) {
+                resetAlbumLoop(false);
+            }
+        });
+
+        const albumSlideDelay = 2500;
+        let albumSlideInterval;
+
+        function advanceAlbumSlider() {
+            if (usesVerticalAlbumSlider()) {
+                if (currentVerticalAlbumIndex >= albumLoopResetIndex) {
+                    resetAlbumLoop(true);
+                }
+                currentVerticalAlbumIndex++;
+                showVerticalAlbumCard(currentVerticalAlbumIndex, true);
+                return;
+            }
+
+            if (currentHorizontalAlbumIndex >= albumLoopResetIndex) {
+                resetAlbumLoop(false);
+            }
+            currentHorizontalAlbumIndex++;
+            showHorizontalAlbumCard(currentHorizontalAlbumIndex, true);
+        }
+
+        function startAlbumSlider() {
+            window.clearInterval(albumSlideInterval);
+            albumSlideInterval = window.setInterval(advanceAlbumSlider, albumSlideDelay);
+        }
+
+        function resumeAlbumSlider(advanceImmediately = false) {
+            if (document.hidden) return;
+            if (advanceImmediately) advanceAlbumSlider();
+            startAlbumSlider();
+        }
+
+        startAlbumSlider();
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                window.clearInterval(albumSlideInterval);
+                return;
+            }
+
+            resumeAlbumSlider(true);
+        });
+
+        window.addEventListener('pageshow', () => resumeAlbumSlider());
+        window.addEventListener('focus', () => resumeAlbumSlider());
+
+        /* DIGITAL INVITATION VIDEO PLAYER */
+        function toggleInvitationVideo(card) {
+            const thumb = card.querySelector('.invitation-thumbnail');
+            const thumbnailContainer = thumb.closest('picture') || thumb;
+            const video = card.querySelector('.invitation-video');
+            const playBtn = card.querySelector('.play-button-overlay');
+
+            if (video.paused) {
+                thumbnailContainer.style.display = 'none';
+                playBtn.style.display = 'none';
+                video.style.display = 'block';
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        document.querySelectorAll('.invitation-video').forEach((videoElement) => {
+            videoElement.addEventListener('pause', () => {
+                if (videoElement.ended) {
+                    const card = videoElement.closest('.invitation-video-wrapper');
+                    const thumb = card.querySelector('.invitation-thumbnail');
+                    const thumbnailContainer = thumb.closest('picture') || thumb;
+                    thumbnailContainer.style.display = 'block';
+                    card.querySelector('.play-button-overlay').style.display = 'flex';
+                    videoElement.style.display = 'none';
+                }
+            });
+        });
+
+        /* DYNAMIC PHONE STATUS BAR CLOCK */
+        function updateCameraHandOffer() {
+            const offerElement = document.getElementById('cameraHandOffer');
+            if (!offerElement) return;
+
+            const monthName = new Date().toLocaleString('en-US', { month: 'long' });
+            offerElement.textContent = `${monthName} offer is live now. Upto 45% discount.`;
+        }
+
+        const cameraWeddingPhoto = document.querySelector('.camera-section-wedding-photo');
+
+        function toggleCameraWeddingPhotoZoom() {
+            if (!cameraWeddingPhoto || !window.matchMedia('(max-width: 600px)').matches) return;
+            const isZoomed = cameraWeddingPhoto.classList.toggle('is-zoomed');
+            cameraWeddingPhoto.setAttribute('aria-label', isZoomed ? 'Tap to zoom out wedding photo' : 'Tap to zoom wedding photo');
+        }
+
+        if (cameraWeddingPhoto) {
+            cameraWeddingPhoto.addEventListener('click', toggleCameraWeddingPhotoZoom);
+            cameraWeddingPhoto.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleCameraWeddingPhotoZoom();
+                }
+            });
+        }
+
+        const framePhotoMockup = document.getElementById('framePhotoMockup');
+        const framePhotoImage = document.getElementById('framePhotoImage');
+        const framePhotoHint = document.querySelector('.frame-photo-hint');
+        let currentFramePhotoNumber = 10;
+        let isFramePhotoAnimating = false;
+        let framePhotoChangeCount = 0;
+
+        function framePhotoUrl(number) {
+            return `https://ik.imagekit.io/d3ycnoiwd/PrantikWebsite/hero-mobile${number}.jpg`;
+        }
+
+        function showNextFramePhoto() {
+            if (!framePhotoMockup || !framePhotoImage || isFramePhotoAnimating) return;
+
+            isFramePhotoAnimating = true;
+            framePhotoChangeCount += 1;
+            if (framePhotoChangeCount >= 3 && framePhotoHint) {
+                framePhotoHint.classList.add('is-hidden');
+            }
+            const nextPhotoNumber = currentFramePhotoNumber === 10 ? 1 : currentFramePhotoNumber + 1;
+            const nextImage = document.createElement('img');
+            nextImage.className = 'frame-photo-entering';
+            nextImage.alt = 'Framed wedding photograph';
+
+            nextImage.addEventListener('load', () => {
+                framePhotoImage.parentElement.append(nextImage);
+                framePhotoImage.classList.add('frame-photo-leaving');
+
+                nextImage.addEventListener('animationend', () => {
+                    framePhotoImage.src = nextImage.src;
+                    framePhotoImage.classList.remove('frame-photo-leaving');
+                    nextImage.remove();
+                    currentFramePhotoNumber = nextPhotoNumber;
+                    isFramePhotoAnimating = false;
+                }, { once: true });
+            }, { once: true });
+
+            nextImage.addEventListener('error', () => {
+                isFramePhotoAnimating = false;
+            }, { once: true });
+
+            nextImage.src = framePhotoUrl(nextPhotoNumber);
+        }
+
+        if (framePhotoMockup) {
+            framePhotoMockup.addEventListener('click', showNextFramePhoto);
+            framePhotoMockup.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    showNextFramePhoto();
+                }
+            });
+        }
+
+        // Restore the hint whenever this page is shown again, including after refresh.
+        window.addEventListener('pageshow', () => {
+            framePhotoChangeCount = 0;
+            if (framePhotoHint) framePhotoHint.classList.remove('is-hidden');
+        });
+
+        function updatePhoneClock() {
+            const timeElement = document.getElementById('phoneTime');
+            if (!timeElement) return;
+
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+
+            // Convert 24-hour time to 12-hour format (iOS style)
+            hours = hours % 12 || 12;
+
+            timeElement.textContent = `${hours}:${minutes}`;
+        }
+
+        // Run immediately when page loads
+        updateCameraHandOffer();
+        updatePhoneClock();
+
+        // Refresh clock every minute
+        setInterval(updatePhoneClock, 60000);
+    </script>
+    <script src="scroll-reveal.js?v=3"></script>
+    <script>
+        (() => {
+            const chat = document.querySelector('.whatsapp-chat');
+            const panel = document.getElementById('whatsappChatPanel');
+            const launcher = chat?.querySelector('.whatsapp-chat-launcher');
+            const closeButton = chat?.querySelector('.whatsapp-chat-close');
+            const notification = chat?.querySelector('.whatsapp-chat-notification');
+            const form = document.getElementById('whatsappChatForm');
+            const input = document.getElementById('whatsappChatInput');
+            const typingBubble = chat?.querySelector('.whatsapp-typing-bubble');
+            const greeting = chat?.querySelector('.whatsapp-chat-message');
+            const greetingTime = document.getElementById('whatsappGreetingTime');
+            let greetingTimer;
+            let hasOpenedChat = false;
+            let hasShownGreeting = false;
+
+            if (!chat || !panel || !launcher || !closeButton || !notification || !form || !input || !typingBubble || !greeting || !greetingTime) return;
+
+            function updateGreetingTime() {
+                greetingTime.textContent = new Intl.DateTimeFormat('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                }).format(new Date());
+            }
+
+            function setChatOpen(open) {
+                chat.classList.toggle('is-open', open);
+                panel.setAttribute('aria-hidden', String(!open));
+                launcher.setAttribute('aria-expanded', String(open));
+                launcher.setAttribute('aria-label', open ? 'Close WhatsApp chat' : 'Open WhatsApp chat');
+                window.clearTimeout(greetingTimer);
+
+                if (open) {
+                    hasOpenedChat = true;
+                    chat.classList.remove('has-notification');
+                    updateGreetingTime();
+                    typingBubble.hidden = hasShownGreeting;
+                    greeting.hidden = !hasShownGreeting;
+
+                    if (!hasShownGreeting) greetingTimer = window.setTimeout(() => {
+                        typingBubble.hidden = true;
+                        greeting.hidden = false;
+                        hasShownGreeting = true;
+                        updateGreetingTime();
+                    }, 1400);
+                    window.setTimeout(() => input.focus({ preventScroll: true }), 250);
+                }
+            }
+
+            launcher.addEventListener('click', () => setChatOpen(!chat.classList.contains('is-open')));
+            closeButton.addEventListener('click', () => setChatOpen(false));
+            window.setTimeout(() => {
+                if (!hasOpenedChat) chat.classList.add('has-notification');
+            }, 6000);
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') setChatOpen(false);
+            });
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const message = input.value.trim() || 'Hello Prantik, I would like to know more about your photography services.';
+                window.open(`https://wa.me/917908441469?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+            });
+
+            updateGreetingTime();
+        })();
+    </script>
+    <script>
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+        document.addEventListener('dragstart', (event) => {
+            if (event.target.closest('img, video, a')) event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
